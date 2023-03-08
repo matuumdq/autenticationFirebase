@@ -39,7 +39,7 @@ const Account = () => {
 
   return (
     <div className='w-full p-4'>
-        <div className="flex justify-between flex-col sm:flex-row">
+        <div className="flex justify-between flex-col sm:flex-row max-w-[900px] mx-auto">
             <h1 className='text-2xl font-thin py-5'>Welcome <span className="font-semibold"> {nameCap}</span> </h1>
             <button onClick={handleLogout} className='bg-blue-500 hover:bg-blue-400 text-white p-2 my-4 font-bold shadow-lg shadow-gray-500 hover:shadow-blue-300 ease-in duration-100 rounded-lg w-[100px]'>Logout</button>
         </div>
