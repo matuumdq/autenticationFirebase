@@ -9,7 +9,7 @@ const SignIn = () => {
     const [error, setError] = useState('')
     const navigate = useNavigate()
     const { signIn } = UserAuth()
-
+    
     const handleSubmit = async(e) => {
         e.preventDefault()
         setError('')
@@ -23,23 +23,23 @@ const SignIn = () => {
     }
 
   return (
-    <div className='max-w[700px] mx-auto my-16 p-4'>
+    <div className='max-w-[500px] w-full rounded-md shadow-xl p-4 mt-6 border'>
         <div>
-            <h1 className='text-2xl font-bold py-2'>Sing in to your Account</h1>
-            <p className='py-2'>
-                Dont't have an account yet? <Link to='/singup' className='underline'>Sing up</Link>
+            <h1 className='text-2xl font-normal py-4 '>Log in to your Account</h1>
+            <p className='py-2 font-thin'>
+                Dont't have an account yet? <Link to='/singup' className='underline font-semibold text-[#1CB5E0]'>Sing up</Link>
             </p>
         </div>
         <form onSubmit={handleSubmit}>
             <div className='flex flex-col py-2'>
                 <label className='py-2 font-medium'>Email Address</label>
-                <input onChange={(e) => setEmail(e.target.value)} className='border p-3' type="email" />
+                <input onChange={(e) => setEmail(e.target.value)} className='border p-3 rounded-md shadow-md' placeholder='email@email.com' type="email" />
             </div>
             <div className='flex flex-col py-2'>
                 <label className='py-2 font-medium'>Password</label>
-                <input onChange={(e) => setPassword(e.target.value)} className='border p-3' type="password" />
+                <input onChange={(e) => setPassword(e.target.value)} className='border p-3 rounded-md shadow-md' placeholder='Your password' type="password" />
             </div>
-            <button className='border border-gray-400 bg-gray-600 hover:bg-gray-500 w-full text-white p-4 my-2 font-bold shadow-lg shadow-gray-500 ease-in duration-100 rounded-lg'>Sing In</button>
+            <button className=' bg-blue-500 hover:bg-blue-400 w-full text-white p-4 my-4 font-bold shadow-lg shadow-gray-500 ease-in duration-100 rounded-lg'>Log In</button>
         </form>
     </div>  
   )
