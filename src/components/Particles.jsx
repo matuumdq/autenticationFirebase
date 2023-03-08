@@ -18,25 +18,25 @@ export const ParticlesComponent = (props) => {
         enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
         zIndex: -1, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
       },
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true, // enables the click event
-            mode: "push", // adds the particles on click
-          },
-          onHover: {
-            enable: true, // enables the hover event
-            mode: "slow", // make the particles run away from the cursor
-          },
-        },
-        modes: {
-            bubble: { distance: 400, duration: 2, opacity: 0.8, size: 40, speed: 3 },
-            grab: { distance: 400, links: { opacity: 1 } },
-            push: { quantity: 4 },
-            remove: { quantity: 2 },
-            repulse: { distance: 200, duration: 0.4 }
-          },
-      },
+    //   interactivity: {
+    //     events: {
+    //       onClick: {
+    //         enable: true, // enables the click event
+    //         mode: "push", // adds the particles on click
+    //       },
+    //       onHover: {
+    //         enable: true, // enables the hover event
+    //         mode: "slow", // make the particles run away from the cursor
+    //       },
+    //     },
+    //     modes: {
+    //         bubble: { distance: 400, duration: 2, opacity: 0.8, size: 40, speed: 3 },
+    //         grab: { distance: 400, links: { opacity: 1 } },
+    //         push: { quantity: 4 },
+    //         remove: { quantity: 2 },
+    //         repulse: { distance: 200, duration: 0.4 }
+    //       },
+    //   },
       particles: {
         number: {
           value: 52,
